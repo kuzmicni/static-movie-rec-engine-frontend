@@ -128,7 +128,6 @@ export default {
     getImgUrl(imgName) {
       var images = require.context('../assets/', false, /\.jpg$/)
       return images('./' + imgName + ".jpg")
-            // return `../assets/${imgName}.jpg`
     },
     handleClickOutside(event){
       if (!this.$el.contains(event.target)) {
